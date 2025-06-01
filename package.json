@@ -13,7 +13,7 @@
     "electron-builder": "^25.1.8"
   },
   "build": {
-    "appId": "com.example.hellomas",
+    "appId": "com.electron-mas",
     "productName": "HelloMAS",
     "mac": {
       "category": "public.app-category.utilities",
@@ -23,11 +23,12 @@
           "arch": ["universal"]
         }
       ],
+      "bundleVersion": "101",
       "entitlements": "build/entitlements.mas.plist",
       "entitlementsInherit": "build/entitlements.mas.inherit.plist",
       "hardenedRuntime": false,
       "gatekeeperAssess": true,
-      "provisioningProfile": "build/electronmas.provisionprofile"
+      "provisioningProfile": "build/TestMacAppStore.provisionprofile"
     },
     "mas": {
       "type": "distribution"
